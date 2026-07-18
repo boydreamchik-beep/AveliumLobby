@@ -1,0 +1,19 @@
+name: AveliumLobby
+version: '1.0'
+main: net.avelium.aveliumlobby.AveliumLobby
+api-version: '1.20'
+author: Avelium
+description: Плагин управления лобби для сервера Avelium
+
+commands:
+  menu:
+    description: Открыть меню выбора режимов
+    aliases: [lobby, hub, m]
+  setlobby:
+    description: Установить точку спавна в лобби
+    permission: aveliumlobby.admin
+
+permissions:
+  aveliumlobby.admin:
+    description: Админские права лобби
+    default: op
